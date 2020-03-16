@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.junit.Assert;
 import org.junit.rules.ErrorCollector;
 
-public class PageFile extends LocatorsFile {
+public class  extends LocatorsFile {
 	
 	public WebDriver driver;
 	public ErrorCollector errCol = new ErrorCollector();
@@ -23,7 +23,7 @@ public class PageFile extends LocatorsFile {
 	public void openBrowser() throws IOException, InterruptedException{
 		
 		//Open Chrome Browser
-		System.setProperty("webdriver.chrome.driver","C:/Users/pkish/eclipse-workspace/DIT0002/Gmail/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/Users/pkish/git/Gmail-Final-Project/Gmail/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		//Setup Driver Property
@@ -190,6 +190,7 @@ public class PageFile extends LocatorsFile {
 		
 		//select inbox and click
 		MtTextBox.sendKeys("Inbox");
+		Thread.sleep(2000);
 		MtTextBox.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 		

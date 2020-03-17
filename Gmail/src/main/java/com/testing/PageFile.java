@@ -14,34 +14,31 @@ import org.openqa.selenium.support.PageFactory;
 import org.junit.Assert;
 import org.junit.rules.ErrorCollector;
 
-public class  extends LocatorsFile {
+public class PageFile extends LocatorsFile {
 	
 	public WebDriver driver;
 	public ErrorCollector errCol = new ErrorCollector();
-	public Actions builder = new Actions(driver);
-	
-	public void openBrowser() throws IOException, InterruptedException{
+
+	public void openBrowser() throws IOException, InterruptedException {
 		
-		//Open Chrome Browser
-		System.setProperty("webdriver.chrome.driver","C:/Users/pkish/git/Gmail-Final-Project/Gmail/chromedriver.exe");
-		driver = new ChromeDriver();
+		//Opening Chrome Browser
+		System.setProperty("webdriver.chrome.driver", "C:/Users/pkish/git/Gmail-Final-Project/Gmail/chromedriver.exe");
+		driver = new ChromeDriver();	
 		
 		//Setup Driver Property
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-				
-		PageFactory.initElements(driver, this);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);	
 		
-	} 
+		PageFactory.initElements(driver, this);	
+
+	}
 	
-	public void closeBrowser() {
+	public void closeBrowser() {		
 		driver.quit();
 	}
 	
-	
-	public void openURL() throws Exception{
-		driver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+	public void openURL() throws Exception {	
+		driver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");	//opening any URL
 		Thread.sleep(2000);
 	}
 	
@@ -50,7 +47,7 @@ public class  extends LocatorsFile {
 		//Try to login with Invalid Credential(s) and verify the Error message
     	
 		//Enter invalid user name and check error message
-    	UserTextBox.sendKeys("ddkkkdkdkdk");
+    	UserTextBox.sendKeys("ddkkkdkdkdk@gmail.com");
     	UserTextBox.sendKeys(Keys.ENTER);
     	Thread.sleep(2000);
     	
@@ -71,8 +68,8 @@ public class  extends LocatorsFile {
     	Thread.sleep(2000);
     	
 	}
-	/**
-	public void invalidPwd() throws InterruptedException {
+    
+    public void invalidPwd() throws InterruptedException {
 		
 		//Enter valid userid but wrong password and verify error message
     	
@@ -102,8 +99,8 @@ public class  extends LocatorsFile {
     	Thread.sleep(2000);
 		
 	}
-	
-	public void login() throws InterruptedException {
+    
+    public void login() throws InterruptedException {
 		
 		//Enter valid user name
 		UserTextBox.sendKeys("vrajkhan576@gmail.com");
@@ -113,11 +110,11 @@ public class  extends LocatorsFile {
     	//Enter valid user password
     	PwdTextBox.sendKeys("Vraj1994");
     	PwdTextBox.sendKeys(Keys.ENTER);
-    	Thread.sleep(2000);
+    	Thread.sleep(15000);
 		
 	}
-	
-	public void countEmail() throws InterruptedException {
+    
+    public void countEmail() throws InterruptedException {
 		
 		//Count how many emails on your first page of your Inbox and print the count on console.
 				
@@ -127,20 +124,21 @@ public class  extends LocatorsFile {
 		Thread.sleep(2000);
 		
 	}
-	
-	public void inboxEmails() {
+    
+    public void inboxEmails() {
 		
 		//Print total number of emails in your Inbox
 		WebElement ttlEmail = TtlEmail;
-		System.out.println("Total emails = "+ttlEmail.getText());
-				
+		System.out.println("Total emails = "+ttlEmail.getText());		
 		
 	}
-	
-	public void moveToTrash() throws InterruptedException {
+    
+    public void moveToTrash() throws InterruptedException {
 		
 		//Select any one email from the list of your Inbox and move to Trash and print total number of emails in your Inbox
 		
+    	Actions builder = new Actions(driver);
+    	
 		//select email
 		WebElement select = Select;
 		builder.moveToElement(select).build().perform();
@@ -157,18 +155,19 @@ public class  extends LocatorsFile {
 		WebElement ttlEmail1 = TtlEmail;
 		System.out.println("Total emails after moving one email to the trash = "+ttlEmail1.getText());
 		
-		
-	}  
-	
-	public void moveBackToInbox() throws InterruptedException {
+	}
+    
+    public void moveBackToInbox() throws InterruptedException {
 		
 		//Selected email move back to Inbox and print total number of emails in your Inbox
 		
+    	Actions builder = new Actions(driver);
+    	
 		//click on more
 		WebElement more = More;
 		builder.moveToElement(more).build().perform();
 		more.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		//click on bin
 		WebElement bin = Bin;
@@ -207,11 +206,13 @@ public class  extends LocatorsFile {
 		System.out.println("Total emails after moving one email back to the inbox = "+ttlEmail2.getText());
 		Thread.sleep(2000);
 		
-	} 
-	
-	public void markAsUnread() throws InterruptedException {
+	}
+    
+    public void markAsUnread() throws InterruptedException {
 		
 		//Marked any Read email to Unread email and verify it
+    	
+    	Actions builder = new Actions(driver);
     	
     	//select one read email
     	WebElement selectRead = SelectRead;
@@ -254,10 +255,12 @@ public class  extends LocatorsFile {
     	Thread.sleep(2000);
 		
 	}
-	
-	public void markAsRead() throws InterruptedException {
+    
+    public void markAsRead() throws InterruptedException {
 		
 		//Now, that Unread email marked to Read email and verify it
+    	
+    	Actions builder = new Actions(driver);
     	
 		//select unread email
     	WebElement selectUnread = SelectUnread;
@@ -299,6 +302,6 @@ public class  extends LocatorsFile {
     	deselect1.click();
     	Thread.sleep(2000);
 		
-	}**/
+	}
 
 }

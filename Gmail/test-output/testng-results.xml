@@ -1,340 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="2" total="9" passed="0">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55036" started-at="2020-03-17T18:03:50Z" finished-at="2020-03-17T18:04:45Z">
+  <suite name="Default suite" duration-ms="311121" started-at="2020-03-17T22:19:12Z" finished-at="2020-03-17T22:24:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55036" started-at="2020-03-17T18:03:50Z" finished-at="2020-03-17T18:04:45Z">
+    <test name="Default test" duration-ms="311121" started-at="2020-03-17T22:19:12Z" finished-at="2020-03-17T22:24:24Z">
       <class name="com.testing.TestFile">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="22314" started-at="2020-03-17T14:03:50Z" finished-at="2020-03-17T14:04:13Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="17203" started-at="2020-03-17T18:19:12Z" finished-at="2020-03-17T18:19:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="invalidUser()[pri:1, instance:com.testing.TestFile@69ea3742]" name="invalidUser" duration-ms="28" started-at="2020-03-17T14:04:13Z" finished-at="2020-03-17T14:04:13Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression .//*[@id='identifierId']" because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='identifierId']"' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58055}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\pkish\AppData\Local\Temp\scoped_dir656_517808533}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.132, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: da9193c24e173b864fde18e5c8a6db8a
-*** Element info: {Using=xpath, value=.//*[@id='identifierId']"}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//*[@id='identifierId']" because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='identifierId']"' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58055}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\pkish\AppData\Local\Temp\scoped_dir656_517808533}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.132, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: da9193c24e173b864fde18e5c8a6db8a
-*** Element info: {Using=xpath, value=.//*[@id='identifierId']"}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at com.testing.PageFile.invalidUser(PageFile.java:50)
-	at com.testing.TestFile.invalidUser(TestFile.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method status="PASS" signature="invalidUser()[pri:1, instance:com.testing.TestFile@69ea3742]" name="invalidUser" duration-ms="5077" started-at="2020-03-17T18:19:30Z" finished-at="2020-03-17T18:19:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUser -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="1512" started-at="2020-03-17T14:04:13Z" finished-at="2020-03-17T14:04:14Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="1577" started-at="2020-03-17T18:19:35Z" finished-at="2020-03-17T18:19:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidUser status=FAILURE method=TestFile.invalidUser()[pri:1, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+                <![CDATA[[TestResult name=invalidUser status=SUCCESS method=TestFile.invalidUser()[pri:1, instance:com.testing.TestFile@69ea3742] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="13172" started-at="2020-03-17T14:04:14Z" finished-at="2020-03-17T14:04:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="13422" started-at="2020-03-17T18:19:36Z" finished-at="2020-03-17T18:19:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="invalidPwd()[pri:2, instance:com.testing.TestFile@69ea3742]" name="invalidPwd" duration-ms="27" started-at="2020-03-17T14:04:27Z" finished-at="2020-03-17T14:04:27Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression .//*[@id='identifierId']" because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='identifierId']"' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58084}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\pkish\AppData\Local\Temp\scoped_dir3712_824584827}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.132, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b63e7f72a22070247ce6744d04fdecd5
-*** Element info: {Using=xpath, value=.//*[@id='identifierId']"}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//*[@id='identifierId']" because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='identifierId']"' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 26 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58084}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\pkish\AppData\Local\Temp\scoped_dir3712_824584827}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=80.0.3987.132, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b63e7f72a22070247ce6744d04fdecd5
-*** Element info: {Using=xpath, value=.//*[@id='identifierId']"}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at com.testing.PageFile.invalidPwd(PageFile.java:77)
-	at com.testing.TestFile.invalidPwd(TestFile.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method status="PASS" signature="invalidPwd()[pri:2, instance:com.testing.TestFile@69ea3742]" name="invalidPwd" duration-ms="6472" started-at="2020-03-17T18:19:50Z" finished-at="2020-03-17T18:19:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPwd -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="1001" started-at="2020-03-17T14:04:27Z" finished-at="2020-03-17T14:04:28Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="1092" started-at="2020-03-17T18:19:56Z" finished-at="2020-03-17T18:19:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidPwd status=FAILURE method=TestFile.invalidPwd()[pri:2, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+                <![CDATA[[TestResult name=invalidPwd status=SUCCESS method=TestFile.invalidPwd()[pri:2, instance:com.testing.TestFile@69ea3742] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:28Z" finished-at="2020-03-17T14:04:28Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created
-from chrome not reachable
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.74 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=80.0.3987.132)
-  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.74 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'DESKTOP-A63CIAT', ip: '192.168.0.228', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
-	at com.testing.PageFile.openBrowser(PageFile.java:26)
-	at com.testing.TestFile.beforeMethod(TestFile.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12714" started-at="2020-03-17T18:19:57Z" finished-at="2020-03-17T18:20:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login()[pri:3, instance:com.testing.TestFile@69ea3742]" name="login" duration-ms="2" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="login()[pri:3, instance:com.testing.TestFile@69ea3742]" name="login" duration-ms="17419" started-at="2020-03-17T18:20:10Z" finished-at="2020-03-17T18:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="865" started-at="2020-03-17T18:20:27Z" finished-at="2020-03-17T18:20:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TestFile.login()[pri:3, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12873" started-at="2020-03-17T18:20:28Z" finished-at="2020-03-17T18:20:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="countEmail()[pri:4, instance:com.testing.TestFile@69ea3742]" name="countEmail" duration-ms="3" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="countEmail()[pri:4, instance:com.testing.TestFile@69ea3742]" name="countEmail" duration-ms="19628" started-at="2020-03-17T18:20:41Z" finished-at="2020-03-17T18:21:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countEmail -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="909" started-at="2020-03-17T18:21:01Z" finished-at="2020-03-17T18:21:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=countEmail status=SUCCESS method=TestFile.countEmail()[pri:4, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12370" started-at="2020-03-17T18:21:02Z" finished-at="2020-03-17T18:21:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="inboxEmails()[pri:5, instance:com.testing.TestFile@69ea3742]" name="inboxEmails" duration-ms="4" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="inboxEmails()[pri:5, instance:com.testing.TestFile@69ea3742]" name="inboxEmails" duration-ms="17493" started-at="2020-03-17T18:21:14Z" finished-at="2020-03-17T18:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inboxEmails -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="961" started-at="2020-03-17T18:21:32Z" finished-at="2020-03-17T18:21:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inboxEmails status=SUCCESS method=TestFile.inboxEmails()[pri:5, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12885" started-at="2020-03-17T18:21:33Z" finished-at="2020-03-17T18:21:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="moveToTrash()[pri:6, instance:com.testing.TestFile@69ea3742]" name="moveToTrash" duration-ms="2" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="moveToTrash()[pri:6, instance:com.testing.TestFile@69ea3742]" name="moveToTrash" duration-ms="22036" started-at="2020-03-17T18:21:45Z" finished-at="2020-03-17T18:22:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moveToTrash -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="923" started-at="2020-03-17T18:22:07Z" finished-at="2020-03-17T18:22:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=moveToTrash status=SUCCESS method=TestFile.moveToTrash()[pri:6, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12902" started-at="2020-03-17T18:22:08Z" finished-at="2020-03-17T18:22:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="moveBackToInbox()[pri:7, instance:com.testing.TestFile@69ea3742]" name="moveBackToInbox" duration-ms="2" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="moveBackToInbox()[pri:7, instance:com.testing.TestFile@69ea3742]" name="moveBackToInbox" duration-ms="37825" started-at="2020-03-17T18:22:21Z" finished-at="2020-03-17T18:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moveBackToInbox -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="940" started-at="2020-03-17T18:22:59Z" finished-at="2020-03-17T18:23:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=moveBackToInbox status=SUCCESS method=TestFile.moveBackToInbox()[pri:7, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="12835" started-at="2020-03-17T18:23:00Z" finished-at="2020-03-17T18:23:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="markAsUnread()[pri:8, instance:com.testing.TestFile@69ea3742]" name="markAsUnread" duration-ms="2" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="markAsUnread()[pri:8, instance:com.testing.TestFile@69ea3742]" name="markAsUnread" duration-ms="27382" started-at="2020-03-17T18:23:13Z" finished-at="2020-03-17T18:23:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- markAsUnread -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="927" started-at="2020-03-17T18:23:40Z" finished-at="2020-03-17T18:23:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=markAsUnread status=SUCCESS method=TestFile.markAsUnread()[pri:8, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testing.TestFile@69ea3742]" name="beforeMethod" is-config="true" duration-ms="14037" started-at="2020-03-17T18:23:41Z" finished-at="2020-03-17T18:23:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="markAsRead()[pri:9, instance:com.testing.TestFile@69ea3742]" name="markAsRead" duration-ms="2" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="markAsRead()[pri:9, instance:com.testing.TestFile@69ea3742]" name="markAsRead" duration-ms="27334" started-at="2020-03-17T18:23:55Z" finished-at="2020-03-17T18:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- markAsRead -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-17T14:04:45Z" finished-at="2020-03-17T14:04:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testing.TestFile@69ea3742]" name="afterMethod" is-config="true" duration-ms="971" started-at="2020-03-17T18:24:23Z" finished-at="2020-03-17T18:24:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=markAsRead status=SUCCESS method=TestFile.markAsRead()[pri:9, instance:com.testing.TestFile@69ea3742] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

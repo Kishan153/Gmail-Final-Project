@@ -7,14 +7,6 @@
         <methods>
           <include name="markAsRead"/>
           <include name="moveBackToInbox"/>
-          <include name="login"/>
-          <include name="moveToTrash"/>
-          <include name="afterMethod"/>
-          <include name="invalidPwd"/>
-          <include name="countEmail"/>
-          <include name="inboxEmails"/>
-          <include name="invalidUser"/>
-          <include name="beforeMethod"/>
           <include name="markAsUnread"/>
         </methods>
       </class> <!-- com.testing.TestFile -->
